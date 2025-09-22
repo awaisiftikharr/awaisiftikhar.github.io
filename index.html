@@ -5,25 +5,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awais Iftikhar - Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
-    header { background: #1a1a1a; color: #fff; padding: 3rem 1rem; }
-    header h1 { margin: 0; font-size: 2.5rem; }
+    /* ---------- Global Styles ---------- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f9; color: #333; }
+    a { text-decoration: none; color: inherit; }
+    h1, h2, h3 { margin-bottom: 1rem; color: #222; }
+    p { margin-bottom: 1rem; }
+
+    /* ---------- Header ---------- */
+    header {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5rem; }
     header p { font-size: 1.2rem; color: #ccc; }
-    section { padding: 2rem; }
-    footer { background: #1a1a1a; color: #fff; padding: 1rem; margin-top: 2rem; }
+
+    /* ---------- Section ---------- */
+    section { padding: 3rem 2rem; max-width: 1000px; margin: auto; }
+    .section-title { text-align: center; margin-bottom: 2rem; font-size: 2rem; color: #444; }
+
+    /* ---------- Skills ---------- */
+    .skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    .skill { background: #fff; padding: 1rem 2rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+
+    /* ---------- Projects ---------- */
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .project {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .project:hover { transform: translateY(-5px); }
+    .project h3 { margin-bottom: 0.5rem; }
+    .project a { color: #0073e6; font-weight: bold; }
+
+    /* ---------- Contact ---------- */
+    .contact { text-align: center; }
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      background: #0073e6;
+      color: #fff;
+      transition: background 0.3s;
+    }
+    .contact a:hover { background: #005bb5; }
+
+    /* ---------- Footer ---------- */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1a1a1a;
+      color: #fff;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
+  <!-- ---------- Header ---------- -->
   <header>
     <h1>👋 Hi, I'm Awais Iftikhar</h1>
     <p>Web Developer | Graphic Designer</p>
   </header>
-  <section>
-    <h2>Projects</h2>
-    <p>Coming soon... 🚀</p>
+
+  <!-- ---------- About ---------- -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I'm a Computer Science student passionate about building websites, crafting digital experiences, 
+      and designing visually appealing graphics. My goal is to combine creativity with code to develop 
+      user-friendly solutions that make an impact.
+    </p>
   </section>
+
+  <!-- ---------- Skills ---------- -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React.js</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Photoshop</div>
+      <div class="skill">Illustrator</div>
+      <div class="skill">Figma</div>
+    </div>
+  </section>
+
+  <!-- ---------- Projects ---------- -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A personal responsive website showcasing my skills and projects.</p>
+        <a href="https://awaisiftikharr.github.io" target="_blank">View Live</a>
+      </div>
+      <div class="project">
+        <h3>DeveloperFolio</h3>
+        <p>An open-source modern portfolio template for developers.</p>
+        <a href="https://github.com/saadpasta/developerFolio" target="_blank">GitHub Repo</a>
+      </div>
+      <div class="project">
+        <h3>ToDo App</h3>
+        <p>A simple web app to manage tasks, built with HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/tastejs/todomvc" target="_blank">GitHub Repo</a>
+      </div>
+      <div class="project">
+        <h3>Graphic Design Showcase</h3>
+        <p>A collection of my graphic design works and creative visuals.</p>
+        <a href="#" target="_blank">Coming Soon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- Contact ---------- -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact">
+      <a href="mailto:awaisiftikhar10012@gmail.com">📧 Email</a>
+      <a href="https://github.com/awaisiftikharr" target="_blank">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/awais-iftikhar-781655383" target="_blank">🔗 LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- ---------- Footer ---------- -->
   <footer>
-    <p>📧 awaisiftikhar10012@gmail.com</p>
+    <p>© 2025 Awais Iftikhar | All Rights Reserved</p>
   </footer>
 </body>
 </html>
