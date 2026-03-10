@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awais Iftikhar | CS Graduate & Full-Stack Developer</title>
+    
+    <meta name="description" content="Professional portfolio of Awais Iftikhar, a Computer Science Graduate from IUB specializing in AI, Django, SEO, and Lead Generation.">
+    <meta property="og:title" content="Awais Iftikhar | CS Graduate Portfolio">
+    <meta property="og:description" content="Specializing in AI-driven web apps and high-conversion e-commerce solutions.">
+    <meta property="og:image" content="https://awaisiftiikhar.netlify.app/assets/portfolio-preview.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-start: #0f172a;
+            --bg-end: #1e293b;
+            --accent: #10b981;
+        }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+            color: #94a3b8;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+        .serif { font-family: 'Playfair Display', serif; }
+        .mono { font-family: 'Fira Code', monospace; }
+        
+        /* Interactive Glass Cards */
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            background: rgba(255, 255, 255, 0.07);
+            border-color: var(--accent);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 20px rgba(16, 185, 129, 0.2);
+        }
+
+        /* Magnetic Cursor Glow Effect */
+        #cursor-glow {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, rgba(16, 185, 129, 0) 70%);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.3s ease;
+        }
+
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="relative">
+
+    <div id="cursor-glow"></div>
+
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 glass-card px-8 py-4 rounded-full flex gap-8 text-[10px] uppercase tracking-[0.2em] font-bold text-white">
+        <a href="#home" class="hover:text-emerald-400 transition">Home</a>
+        <a href="#about" class="hover:text-emerald-400 transition">About</a>
+        <a href="#skills" class="hover:text-emerald-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-emerald-400 transition">Projects</a>
+        <a href="mailto:awaisiftikhar10012@gmail.com" class="text-emerald-400">Contact</a>
+    </nav>
+
+    <header id="home" class="min-h-screen flex items-center px-6 relative z-10">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="reveal">
+                <span class="mono text-emerald-400 text-sm mb-4 block tracking-widest uppercase font-bold">Computer Science Graduate</span>
+                <h1 class="text-white text-6xl md:text-8xl font-extrabold tracking-tighter leading-none mb-6">
+                    Awais <span class="serif italic font-normal text-slate-400">Iftikhar</span>
+                </h1>
+                <p class="max-w-2xl text-xl leading-relaxed text-slate-400 mb-10">
+                    Architecting <span class="text-white font-semibold">scalable web solutions</span> and intelligent systems. 
+                    Specializing in <span class="text-emerald-400">AI integration</span>, Full-Stack development, and 
+                    data-driven <span class="text-emerald-400">SEO growth</span>.
+                </p>
+                <div class="flex flex-wrap gap-6">
+                    <a href="#projects" class="px-8 py-4 bg-emerald-600 text-white font-bold rounded-xl hover:bg-emerald-500 transition shadow-xl shadow-emerald-600/20">Explore Projects</a>
+                    <a href="tel:+923049727530" class="px-8 py-4 border border-slate-700 text-white font-bold rounded-xl hover:border-emerald-500 transition">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-32 px-6 relative z-10 border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
+            <div class="reveal">
+                <h2 class="text-3xl font-bold text-white mb-8 serif italic">Professional Path</h2>
+                <div class="space-y-12">
+                    <div class="relative pl-8 border-l border-emerald-500/30">
+                        <div class="absolute w-2 h-2 bg-emerald-500 rounded-full -left-[4.5px] top-2"></div>
+                        <h4 class="text-white font-bold text-xl">Freelance Web Developer</h4>
+                        <p class="text-emerald-500 mono text-xs mb-4">Global Reach • Remote</p>
+                        <p class="text-sm leading-relaxed">Delivering custom full-stack solutions with a heavy focus on clean architecture, SEO, and Google AdSense eligibility.</p>
+                    </div>
+                    <div class="relative pl-8 border-l border-emerald-500/30">
+                        <div class="absolute w-2 h-2 bg-emerald-500 rounded-full -left-[4.5px] top-2"></div>
+                        <h4 class="text-white font-bold text-xl">Content & SEO Specialist</h4>
+                        <p class="text-emerald-500 mono text-xs mb-4">Strategic Growth</p>
+                        <p class="text-sm leading-relaxed">Managing web properties through advanced keyword research and original content production to drive organic traffic.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal glass-card p-10 rounded-3xl" style="transition-delay: 200ms;">
+                <h2 class="text-3xl font-bold text-white mb-8 serif italic">Education</h2>
+                <div class="space-y-10">
+                    <div>
+                        <h4 class="text-white font-bold text-lg">BS in Computer Science</h4>
+                        <p class="text-slate-400 text-sm">Islamia University of Bahawalpur</p>
+                        <p class="text-emerald-500 mono text-xs mt-1">Class of 2026</p>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold text-lg">Pre-Engineering</h4>
+                        <p class="text-slate-400 text-sm">Aspire Group of Colleges</p>
+                        <p class="text-emerald-500 mono text-xs mt-1">2020 - 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-32 px-6 relative z-10 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16 reveal">
+                <h3 class="text-emerald-500 mono text-xs mb-4 uppercase tracking-[0.3em]">Technical Skills</h3>
+                <h2 class="text-4xl font-bold text-white">Skills & Specializations</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 reveal">
+                <div class="glass-card p-10 rounded-2xl">
+                    <h5 class="text-white font-bold mb-6 flex items-center gap-3">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full"></span> Web Development
+                    </h5>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li class="flex justify-between border-b border-slate-800 pb-2">Django / Python <span class="text-emerald-400 font-bold">Expert</span></li>
+                        <li class="flex justify-between border-b border-slate-800 pb-2">JavaScript (ES6+) <span class="text-slate-500 font-bold">Advanced</span></li>
+                        <li class="flex justify-between border-b border-slate-800 pb-2">HTML5 / CSS3 <span class="text-slate-500 font-bold">Master</span></li>
+                    </ul>
+                </div>
+                <div class="glass-card p-10 rounded-2xl">
+                    <h5 class="text-white font-bold mb-6 flex items-center gap-3">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span> Machine Learning
+                    </h5>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li class="flex justify-between border-b border-slate-800 pb-2">NLP / Scikit-Learn <span class="text-blue-400 font-bold">Specialist</span></li>
+                        <li class="flex justify-between border-b border-slate-800 pb-2">Behavioral Biometrics <span class="text-slate-500 font-bold">Specialist</span></li>
+                        <li class="flex justify-between border-b border-slate-800 pb-2">NumPy / Pandas <span class="text-slate-500 font-bold">Advanced</span></li>
+                    </ul>
+                </div>
+                <div class="glass-card p-10 rounded-2xl">
+                    <h5 class="text-white font-bold mb-6 flex items-center gap-3">
+                        <span class="w-2 h-2 bg-orange-500 rounded-full"></span> Growth
+                    </h5>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li class="flex justify-between border-b border-slate-800 pb-2">Lead Generation <span class="text-orange-400 font-bold">Expert</span></li>
+                        <li class="flex justify-between border-b border-slate-800 pb-2">Cold Calling <span class="text-orange-400 font-bold">Expert</span></li>
+                        <li class="flex justify-between border-b border-slate-800 pb-2">SEO Optimization <span class="text-slate-500 font-bold">Expert</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-32 px-6 max-w-7xl mx-auto relative z-10">
+        <div class="mb-20 reveal">
+            <h2 class="text-4xl font-bold text-white mb-4"> My Projects</h2>
+            <p class="mono text-xs text-slate-500 uppercase tracking-widest">A comprehensive look at my work</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-10">
+            <div class="glass-card p-12 group reveal">
+                <h4 class="text-3xl text-white font-bold mb-4 group-hover:text-emerald-400 transition italic serif">AI Recommendation Engine</h4>
+                <p class="mb-8 leading-relaxed">Final Year Project for Islamia University of Bahawalpur. Integrating custom Machine Learning models into E-commerce platforms to predict behavior and automate suggestions.</p>
+                <div class="flex gap-4 mono text-[11px] text-emerald-500 font-bold">
+                    <span>#PYTHON</span> <span>#DJANGO</span> <span>#AI_ML</span>
+                </div>
+            </div>
+
+            <div class="glass-card p-12 group reveal" style="transition-delay: 100ms;">
+                <h4 class="text-3xl text-white font-bold mb-4 group-hover:text-emerald-400 transition italic serif">SmartFinds.pk</h4>
+                <p class="mb-8 leading-relaxed">A full-scale e-commerce dropshipping innovation for the Pakistani market. Optimized for high-conversion product listings and organic search dominance.</p>
+                <div class="flex gap-4 mono text-[11px] text-emerald-400 font-bold">
+                    <span>#ECOMMERCE</span> <span>#DROPSHIPPING</span> <span>#SEO</span>
+                </div>
+            </div>
+
+            <div class="glass-card p-12 group reveal" style="transition-delay: 200ms;">
+                <h4 class="text-3xl text-white font-bold mb-4 group-hover:text-emerald-400 transition italic serif">Biometric Bot Detection</h4>
+                <p class="mb-8 leading-relaxed">AI security application distinguishing humans from bots via movement velocity and jitter timing. High accuracy without intrusive CAPTCHAs.</p>
+                <div class="flex gap-4 mono text-[11px] text-emerald-400 font-bold">
+                    <span>#SECURITY</span> <span>#BIOMETRICS</span> <span>#ML</span>
+                </div>
+            </div>
+
+            <div class="glass-card p-12 group reveal" style="transition-delay: 300ms;">
+                <h4 class="text-3xl text-white font-bold mb-4 group-hover:text-emerald-400 transition italic serif">AdSense Framework</h4>
+                <p class="mb-8 leading-relaxed">Strategic monetization for original content properties. Optimized placement and site navigability to meet strict program policies.</p>
+                <div class="flex gap-4 mono text-[11px] text-emerald-400 font-bold">
+                    <span>#MONETIZATION</span> <span>#STRATEGY</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-40 px-6 bg-[#0a0f1d] relative z-10 overflow-hidden border-t border-slate-800">
+        <div class="max-w-7xl mx-auto text-center reveal">
+            <h2 class="text-5xl md:text-9xl font-extrabold text-white tracking-tighter mb-12">Let's Talk.</h2>
+            <div class="flex flex-col gap-8 items-center">
+                <a href="mailto:awaisiftikhar10012@gmail.com" class="text-2xl md:text-3xl text-emerald-400 hover:text-white transition font-bold underline underline-offset-8 decoration-emerald-500/30">
+                    awaisiftikhar10012@gmail.com
+                </a>
+                <p class="text-slate-500 font-bold tracking-[0.3em] uppercase text-xs">
+                    Bahawalpur, Pakistan • +92 304 972 7530
+                </p>
+            </div>
+            <div class="mt-32 flex flex-col md:flex-row justify-between items-center text-[10px] text-slate-700 tracking-[0.4em] uppercase font-bold">
+                <p>MMA & Fitness Enthusiast</p>
+                <p class="mt-4 md:mt-0">&copy; Website made by Awais Iftikhar</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Interactive Magnetic Cursor Glow
+        const glow = document.getElementById('cursor-glow');
+        document.addEventListener('mousemove', (e) => {
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+        });
+
+        // Scroll Reveal Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
